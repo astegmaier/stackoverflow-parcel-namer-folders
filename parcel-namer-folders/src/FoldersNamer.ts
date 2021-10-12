@@ -9,7 +9,7 @@ export default new Namer({
         return getPathWithFolder("scripts", bundle);
       case "less":
         return getPathWithFolder("layout", bundle);
-      case "scss":
+      case "css":
         return getPathWithFolder("layout", bundle);
       default:
         return null;
