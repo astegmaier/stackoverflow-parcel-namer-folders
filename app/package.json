@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "start": "parcel src/index.html --cache-dir .parcel-cache --no-autoinstall",
+    "build": "parcel build src/index.html --cache-dir .parcel-cache --no-autoinstall",
+    "clean": "rimraf dist && rimraf .parcel-cache",
+    "serve": "http-server dist",
+    "format": "prettier --write src/**/* -u --no-error-on-unmatched-pattern"
+  },
+  "devDependencies": {
+    "http-server": "^13.0.2",
+    "parcel": "2.0.0-rc.0",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2"
+  }
+}

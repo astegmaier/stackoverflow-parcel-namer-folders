@@ -1,0 +1,14 @@
+{
+  "private": "true",
+  "workspaces": [
+    "parcel-namer-folders",
+    "app"
+  ],
+  "scripts": {
+    "clean": "yarn workspaces run clean",
+    "build": "yarn namer build && yarn app build",
+    "format": "yarn namer format && yarn app format",
+    "namer": "yarn workspace parcel-namer-folders",
+    "app": "yarn workspace app"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "parcel-namer-folders",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/FoldersNamer.js",
+  "source": "src/FoldersNamer.ts",
+  "engines": {
+    "node": ">= 12.0.0",
+    "parcel": "^2.0.0-rc.0"
+  },
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "format": "prettier --write src/**/* -u --no-error-on-unmatched-pattern"
+  },
+  "dependencies": {
+    "@parcel/diagnostic": "2.0.0-rc.0",
+    "@parcel/plugin": "2.0.0-rc.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.3"
+  }
+}
